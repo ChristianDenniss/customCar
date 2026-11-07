@@ -1,4 +1,4 @@
-# jetta infotainment
+# carJetta
 
 2017 vw jetta automatic. want to hack the factory touchscreen UI hard. keep the stock head unit, don't replace it with an aftermarket thing.
 
@@ -10,13 +10,13 @@ prefer actually getting into the OS / filesystem over just running someone else'
 
 ## what i have
 
-- windows laptop + wsl
+- windows laptop(Dell G15 5511) + wsl
 - pico (rp2040): uart bridge experiments, 3.3v only
 - sandisk cruzer spark 32gb usb
 - random small tft for prototyping off-car
-- usb-c hub
+- usb-c hub (this definetly needed to be listed)
 
-no esp32. don't buy more junk until i know what head unit this actually is.
+no esp32. don't buy more junk until i know what head unit this actually is and i dont think a full soc is nessecary
 
 ---
 
@@ -42,9 +42,24 @@ looks like mib2 from what i've seen. maybe technisat/preh. maybe not. need syste
 
 ---
 
+## docs
+
+working notes live under `docs/` (this readme stays at root):
+
+- `plans/` what we're doing
+- `decisions/` choices + why
+- `findings/` what we learned
+- `hardware/` part #s, pinouts, voltages
+- `access/` how we get in
+- `recovery/` how to get back to stock
+
+start with `docs/plans/phase1/initial.md`. car / head unit specs live in `docs/hardware/vehicle.md`.
+
+---
+
 ## next
 
-1. get part # + software train from the car (settings → system info, maybe hold MENU ~10s). no flashing anything.
+1. get part # + software train from the car (settings -> system info, maybe hold MENU ~10s). no flashing anything.
 2. set up a folder in wsl, clone the research repos, don't run their installers yet
 3. figure out how people actually get files in/out of this exact unit
 4. backup first, then swap one dumb icon and see if it sticks
