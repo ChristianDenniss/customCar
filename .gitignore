@@ -1,0 +1,22 @@
+# cloned research (clone locally, don't vendor)
+research/mib-toolbox/
+research/mib-skins/
+
+# unit dumps / restore copies / big images
+dump/**
+!dump/.gitkeep
+custom/**
+!custom/.gitkeep
+backup/**
+!backup/.gitkeep
+firmware/original/**
+!firmware/original/.gitkeep
+firmware/modified/**
+!firmware/modified/.gitkeep
+
+# junk
+.DS_Store
+Thumbs.db
+*.img
+*.vmdk
+*.zip

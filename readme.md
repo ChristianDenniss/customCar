@@ -36,7 +36,7 @@ looks like mib2 from what i've seen. maybe technisat/preh. maybe not. need syste
 ## useful links
 
 - https://github.com/olli991/mib-std2-pq-zr-toolbox
-- https://github.com/mrlinuxpl/mib-std2-skins-customization (`.mcf` skins, unfinished)
+- https://github.com/mrfixpl/mib-std2-skins-customization (`.mcf` skins, unfinished)
 - https://hackaday.io/project/203094-mib2-std-pq-reverse-engineering
 - https://github.com/olli991/mib-std2-pq-zr-toolbox/discussions/686 (someone's 2017 jetta, train example `MST2_EU_VW_PQ_P0359T`, not mine)
 
@@ -52,6 +52,13 @@ working notes live under `docs/` (this readme stays at root):
 - `hardware/` part #s, pinouts, voltages
 - `access/` how we get in
 - `recovery/` how to get back to stock
+
+working files (toolbox-style):
+
+- `dump/` pulled from the unit
+- `custom/` modified stuff to put back
+- `backup/` originals / restore copies
+- `firmware/` bigger images if we ever dump eMMC
 
 start with `docs/plans/phase1/initial.md`. car / head unit specs live in `docs/hardware/vehicle.md`.
 

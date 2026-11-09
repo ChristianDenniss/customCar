@@ -26,13 +26,13 @@ no car needed.
 
 ```bash
 # from this repo (carJetta)
-mkdir -p research backups firmware/{original,modified} assets/{original,custom} scripts prototypes
+mkdir -p research backup dump custom firmware/{original,modified} scripts prototypes
 
 sudo apt update
 sudo apt install -y git file binutils python3 python3-pip unzip xxd
 
 git clone https://github.com/olli991/mib-std2-pq-zr-toolbox.git research/mib-toolbox
-git clone https://github.com/mrlinuxpl/mib-std2-skins-customization.git research/mib-skins
+git clone https://github.com/mrfixpl/mib-std2-skins-customization.git research/mib-skins
 ```
 
 read the repos. don't run install/flash scripts yet.
