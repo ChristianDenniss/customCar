@@ -8,7 +8,7 @@ filled in when i'm at the car. this is the source of truth for specs.
 - model: volkswagen jetta
 - transmission: automatic
 - vin: 
-- notes:
+- ?notes:
 
 ## head unit
 

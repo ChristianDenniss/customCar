@@ -1,12 +1,24 @@
 # plan
 
-writing this away from the car. when i actually get at it, update the hardware docs with real numbers instead of guessing from this.
+phase 0 is desk hardware bring-up (see `docs/plans/phase0/hardware-bringup.md`).
 
-rough order: don't flash anything before the unit is identified.
+writing the car bits away from the car. when i get at it, update `docs/hardware/vehicle.md` with real numbers.
+
+rough order: don't flash / modify the **head unit** before it's identified. desk pico flashes are fine.
 
 ---
 
-## phase 0: identify the head unit
+## phase 0: hardware bring-up
+
+desk only. details in `phase0/hardware-bringup.md`.
+
+- test picos, blink each, read unique ids, log them
+- inventory the rest of the kit
+- tfts optional / on hold (no solder, not needed for car UI)
+
+---
+
+## phase 1: identify the head unit
 
 in the car, radio on.
 
@@ -16,13 +28,13 @@ in the car, radio on.
 - hold MENU ~10s for the service menu if available
 - no updates, no coding, nothing writeable
 
-drop the details in `docs/hardware/`. until that exists, later phases are provisional.
+drop the details in `docs/hardware/vehicle.md`. until that exists, later phases are provisional.
 
 ---
 
-## phase 1: desk setup
+## phase 2: desk setup / research
 
-no car needed.
+no car needed (can overlap phase 0).
 
 ```bash
 # from this repo (carJetta)
@@ -37,11 +49,9 @@ git clone https://github.com/mrfixpl/mib-std2-skins-customization.git research/m
 
 read the repos. don't run install/flash scripts yet.
 
-pico whenever: usb, uart bridge firmware, basic serial. stay off the car.
-
 ---
 
-## phase 2: match unit to a known path
+## phase 3: match unit to a known path
 
 once part # / train are real:
 
@@ -55,7 +65,7 @@ notes go in `docs/findings/` and `docs/access/`. if toolbox doesn't apply, plan 
 
 ---
 
-## phase 3: read-only access
+## phase 4: read-only access
 
 files out, not in.
 
@@ -70,7 +80,7 @@ backup what you can. hashes. keep originals somewhere safe.
 
 ---
 
-## phase 4: first small change
+## phase 5: first small change
 
 after a real backup + a known restore path:
 
@@ -86,9 +96,9 @@ then skins / layout. hmi logic later. interactive extras after that.
 
 ## not yet
 
-- buying more hardware
-- wiring the pico into the car
-- firmware updates
+- buying more hardware (unless solder gear for optional tft fun)
+- wiring a pico into the car
+- firmware updates on the head unit
 - replacing the head unit
 - anything safety-related
 
