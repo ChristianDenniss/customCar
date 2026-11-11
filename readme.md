@@ -21,16 +21,11 @@ no esp32. don't buy more junk until i know what head unit this actually is. full
 
 ---
 
-## what i don't know yet
+## what i know / don't
 
-basically everything about the unit:
+head unit looks like **MIB2 Standard PQ** `5C0 035 200 B` / H30 / sw 0357 / codec 3201.0.0.8 / likely Technisat/Preh. details in `docs/hardware/vehicle.md`.
 
-- manufacturer / part number
-- firmware train
-- os
-- whether toolbox / sd / uart even apply
-
-looks like mib2 from what i've seen. maybe technisat/preh. maybe not. need system info screenshots.
+still need: full software train string, os confirm, sd/usb layout, whether toolbox install path is sd vs usb2hsd/etc.
 
 ---
 
