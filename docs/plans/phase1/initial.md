@@ -1,38 +1,28 @@
-# plan
-
-phase 0 is desk hardware bring-up (see `docs/plans/phase0/hardware-bringup.md`).
+# phase 1: initial plan
 
 writing the car bits away from the car. when i get at it, update `docs/hardware/vehicle.md` with real numbers.
 
 rough order: don't flash / modify the **head unit** before it's identified. desk pico flashes are fine.
 
----
-
-## phase 0: hardware bring-up
-
-desk only. details in `phase0/hardware-bringup.md`.
-
-- test picos, blink each, read unique ids, log them
-- inventory the rest of the kit
-- tfts optional / on hold (no solder, not needed for car UI)
+phase 0 (hardware bring-up) is separate: `../phase0/hardware-bringup.md`.
 
 ---
 
-## phase 1: identify the head unit
+## steps
+
+### step 1: identify the head unit
 
 in the car, radio on.
 
-- photo the home screen
-- settings -> system information
-- note part number, software version, software train if shown
-- hold MENU ~10s for the service menu if available
-- no updates, no coding, nothing writeable
+1. photo the home screen
+2. settings -> system information
+3. note part number, software version, software train if shown
+4. hold MENU ~10s for the service menu if available
+5. no updates, no coding, nothing writeable
 
-drop the details in `docs/hardware/vehicle.md`. until that exists, later phases are provisional.
+drop the details in `docs/hardware/vehicle.md`. later steps stay provisional until that exists.
 
----
-
-## phase 2: desk setup / research
+### step 2: desk setup / research
 
 no car needed (can overlap phase 0).
 
@@ -49,9 +39,7 @@ git clone https://github.com/mrfixpl/mib-std2-skins-customization.git research/m
 
 read the repos. don't run install/flash scripts yet.
 
----
-
-## phase 3: match unit to a known path
+### step 3: match unit to a known path
 
 once part # / train are real:
 
@@ -63,9 +51,7 @@ once part # / train are real:
 
 notes go in `docs/findings/` and `docs/access/`. if toolbox doesn't apply, plan B is dump + offline.
 
----
-
-## phase 4: read-only access
+### step 4: read-only access
 
 files out, not in.
 
@@ -78,9 +64,7 @@ least risky first:
 
 backup what you can. hashes. keep originals somewhere safe.
 
----
-
-## phase 5: first small change
+### step 5: first small change
 
 after a real backup + a known restore path:
 
@@ -90,7 +74,7 @@ after a real backup + a known restore path:
 4. deploy the recoverable way
 5. confirm it boots and looks different
 
-then skins / layout. hmi logic later. interactive extras after that.
+after that -> phase 2 (`../phase2/ui-customization.md`).
 
 ---
 
@@ -106,4 +90,4 @@ then skins / layout. hmi logic later. interactive extras after that.
 
 ## done when
 
-stock screen and computer, custom UI, factory features still work.
+head unit identified, got a real access path, backup exists, and one small reversible ui change stuck. heavier customization is phase 2.

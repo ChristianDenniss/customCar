@@ -4,7 +4,7 @@ two identical boards. brand new / first use. not the jetta screen.
 
 ## role
 
-learning / fun side experiment (pico + SPI display). **not required** for jetta UI work. laptop screen is enough for skin/layout prototyping. these don't block the main project.
+learning / fun side experiment (pico + SPI display). not required for jetta UI work. laptop screen is enough for skin/layout prototyping.
 
 ## board
 
@@ -21,9 +21,9 @@ learning / fun side experiment (pico + SPI display). **not required** for jetta 
 
 SDA here = SPI MOSI, not i2c. board says `RST` (not RES).
 
-power plan: use pico `3V3(OUT)` only. no 5v on VCC or data pins.
+power from pico `3V3(OUT)` only. no 5v on VCC or data pins.
 
-## proposed pico wiring (after soldering a header)
+## pico wiring (when i solder a header)
 
 | tft | pico | physical pin | notes |
 | --- | --- | --- | --- |
@@ -40,24 +40,6 @@ any of my four verified picos is fine.
 
 ## status
 
-**on hold.** have the 8-pin header that came with it, but no soldering equipment right now. empty holes won't make a reliable SPI connection without solder, so not wiring or powering this yet.
+on hold. have the 8-pin header, no soldering gear. not wiring or powering until then.
 
-resume when i have an iron (or a pre-soldered panel).
-
-## next (when unblocked)
-
-1. ~~confirm the 8 labels~~ done
-2. ~~controller~~ ST7789 confirmed on silkscreen
-3. solder the 8-pin header into the empty holes
-4. wire to one pico with the table above (3v3 only)
-5. micropython ST7789 driver (or equivalent)
-6. colour test: red / green / blue / white / black
-7. then text + simple graphics
-
-## goal (optional)
-
-eventually get a panel working on a pico (colour test, then simple graphics) for embedded practice. again: optional, not part of the car UI path.
-
-## blocker
-
-no soldering equipment. header is here; just can't attach it yet.
+labels + ST7789 already confirmed. when unblocked: solder header -> wire -> ST7789 driver -> colour test -> simple graphics.

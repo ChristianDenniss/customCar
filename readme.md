@@ -10,16 +10,14 @@ prefer actually getting into the OS / filesystem over just running someone else'
 
 ## what i have
 
-- windows laptop(Dell G15 5511) + wsl
-- pico #1 (rp2040, micro-usb): blink confirmed, 3.3v only
-- pico #2 (rp2040, usb-c): blink confirmed, 3.3v only
-- pico #3 (rp2040, micro-usb): blink confirmed, 3.3v only
-- pico #4 (rp2040, usb-c): blink confirmed, 3.3v only
+- windows laptop (Dell G15 5511) + wsl
+- 4x pico rp2040 -> details in `docs/hardware/pico.md`
+- micro-usb + usb-c cables (for the two pico connector types)
+- 2x 1.54" ST7789 tft (learning/fun only, on hold) -> `docs/hardware/tft.md`
 - sandisk cruzer spark 32gb usb
-- 2x 1.54" 240x240 tft (ST7789 SPI; learning/fun only, not needed for UI prototyping; on hold for solder, see `docs/hardware/tft.md`)
-- usb-c hub (this definetly needed to be listed)
+- usb-c hub
 
-no esp32. don't buy more junk until i know what head unit this actually is and i dont think a full soc is nessecary
+no esp32. don't buy more junk until i know what head unit this actually is. full soc not necessary.
 
 ---
 
@@ -64,16 +62,15 @@ working files (toolbox-style):
 - `firmware/` bigger images if i ever dump eMMC
 - `utils/` handy binaries (pico uf2s, etc)
 
-start with `docs/plans/phase0/hardware-bringup.md`, then `docs/plans/phase1/initial.md`. car / head unit specs live in `docs/hardware/vehicle.md`.
+plans: phase0 bring-up, phase1 first access + tiny change, phase2 real ui customization. car specs: `docs/hardware/vehicle.md`.
 
 ---
 
 ## next
 
-1. **phase 0:** finish pico unique ids (BOOTSEL + `utils/pico/read-id.ps1`), log in `docs/hardware/pico.md`
-2. **phase 1:** part # + software train from the car (settings -> system info, maybe hold MENU ~10s). no head-unit flashing.
-3. match this unit to a real file in/out path
-4. backup first, then swap one small icon and see if it sticks
+1. phase 0: finish pico unique ids
+2. phase 1 step 1: head unit part # / train from the car
+3. keep going through the phase 1 steps
 
 ---
 
