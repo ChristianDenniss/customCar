@@ -1,6 +1,6 @@
 # phase 1: initial plan
 
-writing the car bits away from the car. when i get at it, update `docs/hardware/vehicle.md` with real numbers.
+writing the car bits away from the car. when i get at it, update `docs/hardware/vehicle/` with real numbers.
 
 rough order: don't flash / modify the **head unit** before it's identified. desk pico flashes are fine.
 
@@ -20,7 +20,7 @@ in the car, radio on.
 4. hold MENU ~10s for the service menu if available
 5. no updates, no coding, nothing writeable
 
-drop the details in `docs/hardware/vehicle.md`. later steps stay provisional until that exists.
+drop the details in `docs/hardware/vehicle/`. later steps stay provisional until that exists.
 
 ### step 2: desk setup / research
 

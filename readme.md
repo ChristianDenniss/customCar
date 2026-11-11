@@ -23,9 +23,11 @@ no esp32. don't buy more junk until i know what head unit this actually is. full
 
 ## what i know / don't
 
-head unit looks like **MIB2 Standard PQ** `5C0 035 200 B` / H30 / sw 0357 / codec 3201.0.0.8 / likely Technisat/Preh. details in `docs/hardware/vehicle.md`.
+head unit: **MIB2 Standard Plus PQ** `5C0035200B` / H30 / `MST2_US_VW_PQ_P0357T` (Technisat/Preh).
 
-still need: full software train string, os confirm, sd/usb layout, whether toolbox install path is sd vs usb2hsd/etc.
+vehicle docs: `docs/hardware/vehicle/` (`starting-point/` frozen, `living.md` current).
+
+still need: real filesystem access + backup path (single SD may complicate toolbox install).
 
 ---
 
@@ -57,7 +59,7 @@ working files (toolbox-style):
 - `firmware/` bigger images if i ever dump eMMC
 - `utils/` handy binaries (pico uf2s, etc)
 
-plans: phase0 bring-up, phase1 first access + tiny change, phase2 real ui customization. car specs: `docs/hardware/vehicle.md`.
+plans: phase0 bring-up, phase1 first access + tiny change, phase2 real ui customization. car specs: `docs/hardware/vehicle/`.
 
 ---
 
